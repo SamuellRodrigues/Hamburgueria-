@@ -1,16 +1,53 @@
-.imagem_logo{
+.imagem_logo {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 500;
 }
-body, main {
-    background-color: rgb(77, 73, 73);
+
+main {
+    background-color: rgb(48, 48, 48);
 }
- footer{
-    background-color: rgb(255, 0, 0);
+
+html,footer {
+    background-color: rgb(48, 48, 48);
 }
+
 header {
     background-color: rgb(255, 0, 0);
 }
 
+
+body {
+
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+   
+
+}
+
+.container {
+    max-width: 1000px;
+    
+    background: rgb(48, 48, 48);
+    padding: 19px;
+    border-radius: px;
+    box-shadow:  rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+p {
+    color: #fffdfd;
+    line-height: 1.6;
+}
+
+.img-nav{
+    padding-left: 200px;
+}
+footer{
+    img: center;
+}
