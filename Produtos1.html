@@ -1,159 +1,433 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos</title>
-   
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/burguer.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/burguer.png" type="image/x-icon">
 </head>
+
 <body>
-  
-<header>
-  <nav class="navbar navbar-expand-lg bg-yellow">
 
-    <a class="nav-img pe-2  "><img src="img/big.png" class="img-nav" height="50px" alt=""></a>
+  <header>
 
-  <a class="navbar-brand" href=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Início da Navbar -->
+    <nav class="navbar navbar-expand-lg bg-yellow">
+      <a class="nav-img pe-2  "><img src="img/big.png" class="img-nav" height="100px" alt=""></a>
+      <a class="navbar-brand" href=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="file:///C:/Users/Alunos/Documents/Informatica%20Tarde/Samuel%20Rodrigues/Hamburgueria-/index.html">Home</a>
+            <a class="nav-link active" aria-current="page"
+              href="file:///C:/Users/Alunos/Documents/Informatica%20Tarde/Samuel%20Rodrigues/Hamburgueria-/index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="file:///C:/Users/Alunos/Documents/Informatica%20Tarde/Samuel%20Rodrigues/Hamburgueria-/Produtos1.html">Produtos</a>
+            <a class="nav-link"
+              href="file:///C:/Users/Alunos/Documents/Informatica%20Tarde/Samuel%20Rodrigues/Hamburgueria-/Produtos1.html">Produtos</a>
           </li>
-          
-         
-        
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"></a> <!-- Link para página inicial -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="contato.html" aria-disabled="true"></a>
+            <!-- Link desativado para Contato -->
+          </li>
         </ul>
-        
+
+        <form class="d-flex" role="search">
+          <a href="contato.html" class="btn btn-outline-success">Contato</a>
+          <!-- Botão Contato com link para contato.html -->
+        </form>
+        </ul>
+      </div>
+      </div>
+    </nav>
+    <!-- Fim da Navbar -->
+
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Início do Card -->
+        <div class="col-xl-4 col-sm-6 g-4">
+          <div class="card text-bg-warning" style="width: 25rem;">
+            <img src="img/1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="card-title">X-Frango</h2>
+              <p class="card-text">Filé de frango suculento, grelhado no ponto perfeito, coberto com queijo derretido,
+                alface fresquinha, tomate e molho especial da casa.</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Saiba mais
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-5" id="exampleModalLabel">X-Frango</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      O X-Frango é um sanduíche que traz uma combinação simples, mas cheia de sabor. A base é um filé de
+                      frango suculento, temperado e grelhado para alcançar aquele ponto perfeito: macio por dentro e
+                      levemente crocante por fora. Ele vem coberto com queijo derretido, o que traz uma cremosidade que
+                      contrasta bem com os ingredientes frescos, como a alface e o tomate, que adicionam um toque de
+                      frescor ao conjunto.
+
+                      Para completar, o molho especial da casa adiciona um sabor único ao X-Frango, criando uma
+                      experiência saborosa e bem equilibrada. Esse tipo de sanduíche é popular para quem procura uma
+                      alternativa mais leve, mas ainda bem saborosa, comparado aos clássicos hambúrgueres de carne
+                      bovina.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volta</button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fim do Card -->
+           
+        </div>
+        <div class="col-xl-4 col-sm-6 g-4">
+          <div class="card text-bg-warning" style="width: 25rem;">
+            <img src="img/2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">X-Salada</h5>
+              <p class="card-text">Pão de gergelim fresquinho, carne bovina grelhada suculenta, alface crocante, tomate
+                fresco e picles.</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Saiba mais
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title fs-5" id="exampleModalLabel">X-Salada</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      O **X-Salada** é um sanduíche popular no Brasil, feito com pão de gergelim, carne bovina grelhada,
+                      alface, tomate e picles. É um lanche saboroso e equilibrado, combinando frescor e crocância com a
+                      suculência da carne e o toque ácido do picles, perfeito para quem busca uma opção leve e
+                      deliciosa.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volta</button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 g-4">
+          <div class="card text-bg-warning" style="width: 25rem;">
+            <img src="img/3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">X-Ceddar</h5>
+              <p class="card-text">Duas camadas de carne bovina grelhada, cobertas com queijo derretido. Acompanhado de
+                alface fresca, picles e servido no pão macio.</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Saiba mais
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title fs-5" id="exampleModalLabel">X-Ceddar</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      O **X-Cheddar** é um hambúrguer suculento com duas camadas de carne bovina grelhada e queijo
+                      cheddar derretido, trazendo um sabor intenso e cremoso. Ele é servido com alface fresca e picles,
+                      que equilibram o paladar, no tradicional pão macio. Um lanche perfeito para quem adora um toque
+                      extra de queijo!
+                    </div>
+                    <div class="modal-footer">
+
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volta</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-sm-6 g-4">
+          <div class="card text-bg-warning" style="width: 25rem;">
+            <img src="img/4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cookies</h5>
+              <p class="card-text">Cookies caseiros macios com gotas generosas de chocolate. Perfeitos para acompanhar
+                um copo de leite ou como um snack irresistível.</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Saiba mais
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title fs-5" id="exampleModalLabel">Cookies</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Os **cookies** são biscoitos caseiros macios, recheados com gotas generosas de chocolate. Eles são
+                      perfeitos para acompanhar um copo de leite ou como um lanche irresistível, oferecendo uma
+                      combinação deliciosa de sabor e textura. A cada mordida, a mistura de chocolate derretido e a
+                      maciez do biscoito proporciona uma experiência doce e aconchegante.
+                    </div>
+                    <div class="modal-footer">
+
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volta</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-sm-6 g-4">
+          <div class="card text-bg-warning" style="width: 25rem;">
+            <img src="img/5.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Semifreddo de Chocolate com Frutas Vermelhas</h5>
+              <p class="card-text">Sobremesa cremosa e delicada à base de chocolate, decorada com frutas vermelhas
+                congeladas e uma fina calda de chocolate.</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Saiba mais
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title fs-5" id="exampleModalLabel">Semifreddo de Chocolate com Frutas Vermelhas
+                      </h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      O **Semifreddo de Chocolate com Frutas Vermelhas** é uma sobremesa cremosa e delicada, feita à
+                      base de chocolate. É decorada com frutas vermelhas congeladas, que adicionam frescor e um
+                      contraste de sabor, e finalizada com uma fina calda de chocolate. Essa combinação resulta em uma
+                      experiência rica e saborosa, perfeita para os amantes de chocolate e frutas.
+                    </div>
+                    <div class="modal-footer">
+
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volta</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-sm-6 g-4">
+          <div class="card text-bg-warning" style="width: 25rem;">
+            <img src="img/6.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Macarons</h5>
+              <p class="card-text">Deliciosos e delicados, esses macarons vão adoçar o seu dia com suas cores suaves e
+                sabor irresistível.</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Saiba mais
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title fs-5" id="exampleModalLabel">Macarons</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Os **macarons** são doces franceses deliciosos e delicados, conhecidos por suas cores suaves e
+                      textura leve. Com um recheio irresistível que pode variar de sabores como chocolate, baunilha,
+                      frutas ou pistache, eles são perfeitos para adoçar o seu dia. Cada mordida oferece uma combinação
+                      de crocância por fora e cremosidade por dentro, tornando-os uma sobremesa sofisticada e
+                      encantadora.
+                    </div>
+                    <div class="modal-footer">
+
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volta</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-sm-6 g-4">
+          <div class="card text-bg-warning" style="width: 25rem;">
+            <img src="img/agua.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Água Mineral Crystal (sem gás)</h5>
+              <p class="card-text">Hidrate-se com a leveza e pureza da água mineral, sempre à mão para refrescar.</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Saiba mais
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title fs-5" id="exampleModalLabel">Água Mineral Crystal (sem gás)</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      A **Água Mineral Crystal (sem gás)** é a escolha ideal para quem busca leveza e pureza na
+                      hidratação. Com um sabor suave e refrescante, ela está sempre à mão, proporcionando uma maneira
+                      saudável e deliciosa de se manter hidratado ao longo do dia. Perfeita para qualquer ocasião, a
+                      água mineral é essencial para o bem-estar!
+                    </div>
+                    <div class="modal-footer">
+
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volta</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-sm-6 g-4">
+          <div class="card text-bg-warning" style="width: 25rem;">
+            <img src="img/suco.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Suco de Laranja Integral (Natural One)</h5>
+              <p class="card-text">Refresque-se com 100% de suco natural de laranja, em garrafa reciclável de 2L. Uma
+                opção saudável e sustentável!</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Saiba mais
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title fs-5" id="exampleModalLabel">Suco de Laranja Integral (Natural One)</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      O **Suco de Laranja Integral (Natural One)** é uma bebida refrescante feita com 100% de suco
+                      natural de laranja. Disponível em uma garrafa reciclável de 2 litros, é uma opção saudável e
+                      sustentável para quem deseja saborear o frescor da fruta. Ideal para acompanhar refeições ou para
+                      um lanche nutritivo, ele traz o sabor autêntico da laranja em cada gole!
+                    </div>
+                    <div class="modal-footer">
+
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volta</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-sm-6 g-4">
+          <div class="card text-bg-warning" style="width: 25rem;">
+            <img src="img/coca.png" class="card-img-top" alt="...">
+            <div class="card-body bg-red">
+              <h5 class="card-title">Coca-Cola (350 ml)</h5>
+              <p class="card-text">Para quem ama um clássico, a Coca-Cola não pode faltar. O sabor inconfundível que
+                acompanha bem qualquer refeição.</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Saiba mais
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title fs-5" id="exampleModalLabel">Coca-Cola (350 ml)</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      A **Coca-Cola (350 ml)** é a escolha perfeita para quem aprecia um clássico. Com seu sabor
+                      inconfundível, ela complementa qualquer refeição, proporcionando uma experiência refrescante e
+                      deliciosa. Ideal para acompanhar lanches, refeições ou momentos de descontração, a Coca-Cola é
+                      sempre uma opção popular e adorada!
+                    </div>
+                    <div class="modal-footer">
+
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volta</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
       </div>
     </div>
-  </nav></header>
-<main>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xl-4 col-sm-6 g-4">
-        <div class="card text-bg-warning" style="width: 25rem;">
-    <img src="img/1.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">X-Frango</h5>
-      <p class="card-text">Filé de frango suculento, grelhado no ponto perfeito, coberto com queijo derretido, alface fresquinha, tomate e molho especial da casa.</p>
-      <a href="#" class="btn btn-primary">Comprar</a>
-      <a href="#" class="btn btn-primary">Saiba mais </a>
-    </div>
-  </div>
-</div>
-<div class="col-xl-4 col-sm-6 g-4">
-    <div class="card text-bg-warning" style="width: 25rem;">
-<img src="img/2.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-  <h5 class="card-title">X-Salada</h5>
-  <p class="card-text">Pão de gergelim fresquinho, carne bovina grelhada suculenta, alface crocante, tomate fresco e picles.</p>
-  <a href="#" class="btn btn-primary">Comprar</a>
-      <a href="#" class="btn btn-primary">Saiba mais </a>
-</div>
-</div>
-</div>
-<div class="col-xl-4 col-sm-6 g-4">
-    <div class="card text-bg-warning" style="width: 25rem;">
-<img src="img/3 (2).jpg" class="card-img-top" alt="...">
-<div class="card-body">
-  <h5 class="card-title">X-Ceddar</h5>
-  <p class="card-text">Duas camadas de carne bovina grelhada, cobertas com queijo derretido. Acompanhado de alface fresca, picles e servido no pão macio.</p>
-  <a href="#" class="btn btn-primary">Comprar</a>
-  <a href="#" class="btn btn-primary">Saiba mais </a>
-</div>
-</div>
-</div>
+  </main>
+  <footer></footer>
 
-<div class="col-xl-4 col-sm-6 g-4">
-    <div class="card text-bg-warning" style="width: 25rem;">
-<img src="img/4.webp" class="card-img-top" alt="...">
-<div class="card-body">
-  <h5 class="card-title">Cookies</h5>
-  <p class="card-text">Cookies caseiros macios com gotas generosas de chocolate. Perfeitos para acompanhar um copo de leite ou como um snack irresistível.</p>
-  <a href="#" class="btn btn-primary">Comprar</a>
-      <a href="#" class="btn btn-primary">Saiba mais </a>
-</div>
-</div>
-</div>
-
-<div class="col-xl-4 col-sm-6 g-4">
-    <div class="card text-bg-warning" style="width: 25rem;">
-<img src="img/5.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-  <h5 class="card-title">Semifreddo de Chocolate com Frutas Vermelhas</h5>
-  <p class="card-text">Sobremesa cremosa e delicada à base de chocolate, decorada com frutas vermelhas congeladas e uma fina calda de chocolate.</p>
-  <a href="#" class="btn btn-primary">Comprar</a>
-      <a href="#" class="btn btn-primary">Saiba mais </a>
-</div>
-</div>
-</div>
-
-<div class="col-xl-4 col-sm-6 g-4">
-    <div class="card text-bg-warning" style="width: 25rem;">
-<img src="img/6.jpg" class="card-img-top" alt="...">
-<div class="card-body">
-  <h5 class="card-title">Macarons</h5>
-  <p class="card-text">Deliciosos e delicados, esses macarons vão adoçar o seu dia com suas cores suaves e sabor irresistível.</p>
-  <a href="#" class="btn btn-primary">Comprar</a>
-      <a href="#" class="btn btn-primary">Saiba mais </a>
-</div>
-</div>
-</div>
-
-<div class="col-xl-4 col-sm-6 g-4">
-    <div class="card text-bg-warning" style="width: 25rem;">
-<img src="img/agua.webp" class="card-img-top" alt="...">
-<div class="card-body">
-  <h5 class="card-title">Água Mineral Crystal (sem gás)</h5>
-  <p class="card-text">Hidrate-se com a leveza e pureza da água mineral, sempre à mão para refrescar.</p>
-  <a href="#" class="btn btn-primary">Comprar</a>
-      <a href="#" class="btn btn-primary">Saiba mais </a>
-</div>
-</div>
-</div>
-
-<div class="col-xl-4 col-sm-6 g-4">
-    <div class="card text-bg-warning" style="width: 25rem;">
-<img src="img/SUCO_DE_LARANJA_INTEGRAL_2L_REFRIGERADO_GARRAFA_RECICLAVEL_-_NATURAL_ONE-01.webp" class="card-img-top" alt="...">
-<div class="card-body">
-  <h5 class="card-title">Suco de Laranja Integral (Natural One)</h5>
-  <p class="card-text">Refresque-se com 100% de suco natural de laranja, em garrafa reciclável de 2L. Uma opção saudável e sustentável!</p>
-  <a href="#" class="btn btn-primary">Comprar</a>
-      <a href="#" class="btn btn-primary">Saiba mais </a>
-</div>
-</div>
-</div>
-
-<div class="col-xl-4 col-sm-6 g-4">
-    <div class="card text-bg-warning" style="width: 25rem;">
-<img src="img/coca.png" class="card-img-top" alt="...">
-<div class="card-body bg-red">
-  <h5 class="card-title">Coca-Cola (350 ml)</h5>
-  <p class="card-text">Para quem ama um clássico, a Coca-Cola não pode faltar. O sabor inconfundível que acompanha bem qualquer refeição.</p>
-  <a href="#" class="btn btn-primary">Comprar</a>
-      <a href="#" class="btn btn-primary">Saiba mais </a>
-</div>
-</div>
-</div>
-
-
-
-
-
-</div>
-</div>
-</main>
-<footer></footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

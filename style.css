@@ -14,7 +14,10 @@ html,footer {
 }
 
 header {
-    background-color: rgb(255, 0, 0);
+    background-color: #7B0000;
+    
+    justify-content: center;
+  
 }
 
 
@@ -50,4 +53,14 @@ p {
 }
 footer{
     img: center;
+}
+
+.carousel-item img{
+    width: 1900px;
+    height: 700px;
+}
+
+.navbar  {
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
 }
