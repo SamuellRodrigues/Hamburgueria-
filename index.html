@@ -5,6 +5,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Big Burguer</title>
+
+  <style>
+    /* Estilo para o rodapé */
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /* Estilo para links no rodapé */
+    footer a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    /* Estilo para o conteúdo do rodapé */
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    /* Estilo para informações de direitos autorais */
+    .copyright {
+        margin-top: 10px;
+        font-size: 0.9em;
+        color: #aaa;
+    }
+
+    /* Ajustes para mobile */
+    @media (max-width: 600px) {
+        .footer-content {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+    }
+</style>
+</head>
+<body>
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -32,6 +88,10 @@
           <li class="nav-item">
             <a class="nav-link"
               href="file:///C:/Users/Alunos/Documents/Informatica%20Tarde/Samuel%20Rodrigues/Hamburgueria-/Produtos1.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+              href="file:///C:/Users/Alunos/Documents/Informatica%20Tarde/Samuel%20Rodrigues/Hamburgueria-/sobre%20nos.html">Sobre nois</a>
           </li>
 
           <li class="nav-item">
@@ -78,28 +138,26 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
-
-    <div class="container" id="sobrenos">
-      
-      <h1>Quem somos</h1>
-      <p>Bem-vindo à BIG BURGUER, onde cada mordida conta uma história! Fundada em 2002, nossa paixão por hambúrgueres
-        começou na cozinha da nossa casa e cresceu até se tornar o que é hoje: um espaço acolhedor e vibrante, dedicado
-        a oferecer a melhor experiência gastronômica.</p>
-      <p>Aqui, acreditamos que um bom hambúrguer é mais do que apenas um prato; é uma combinação perfeita de
-        ingredientes frescos, sabores autênticos e um toque especial de amor. Utilizamos apenas carnes de alta
-        qualidade, vegetais frescos e pães artesanais, todos cuidadosamente selecionados para garantir que cada lanche
-        seja inesquecível.</p>
-      <p>Nossos pratos são uma celebração da criatividade! Além dos clássicos que você já ama, oferecemos opções
-        exclusivas, como porção de batata, sempre acompanhadas de molhos caseiros que fazem toda a diferença.</p>
-      <p>Acreditamos em um ambiente acolhedor e amigável, onde amigos e famílias podem se reunir, compartilhar histórias
-        e criar memórias deliciosas. Nossos colaboradores são apaixonados pelo que fazem e estão sempre prontos para
-        oferecer um atendimento excepcional.</p>
-      <p>Venha nos visitar e descubra por que BIG BURGUER é o lugar perfeito para satisfazer seu desejo por um
-        hambúrguer delicioso! Esperamos vê-lo em breve!</p>
-    </div>
+    
 
   </footer>
+  <footer>
+    <div class="footer-content">
+        <div class="social-links">
+            <a href="#facebook">Facebook</a> |
+            <a href="#twitter">Twitter</a> |
+            <a href="#instagram">Instagram</a>
+        </div>
+        <div class="contact-info">
+            <p>Contato: contato@exemplo.com</p>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 Seu Site. Todos os direitos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
